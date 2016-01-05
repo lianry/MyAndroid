@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">MyAndroid</string>
 
-    <string name="hello_world">Hello lry , my git project !</string>
+    <string name="hello_world">Hello lry , my git project 3!</string>
+    <string name="hello_world_return">测试页面与页面的传值!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_return">ReturnActivity</string>
+    <string name="buttonText">buttonText</string>
 </resources>
