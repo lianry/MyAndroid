@@ -28,5 +28,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv_main_result"
-        android:text="@string/buttonText"></Button>
+        android:text="@string/buttonText"/>
+
+    <Button
+        android:id="@+id/btn_web_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_main_skip"
+        android:text="@string/buttonWebPage"/>
+
+
+
+
 </RelativeLayout>

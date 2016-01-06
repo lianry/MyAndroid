@@ -40,7 +40,7 @@ public class ReturnActivity extends Activity {
 
                 //新建一个Bundle，Bundle主要放值类型
                 Bundle bundle = new Bundle();
-                bundle.putString("rs", "我是RsActivity关闭后回传的值！");
+                bundle.putString("rs", "我是ReturnActivity关闭后回传的值！");
                 //将Bundle赋给Intent
                 data.putExtras(bundle);
                 //跳转回MainActivity

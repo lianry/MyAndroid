@@ -18,23 +18,44 @@ public class LryActivity extends Activity {
     //定义一个startActivityForResult（）方法用到的整型值
     private final int requestCode = 1500;
 
+
+    //定义跳转的Button按钮
+    private Button btn_web_page = null;
+    //定义一个startActivityForResult（）方法用到的整型值
+    private final int requestCodeForWebPage = 1500;
+
     /**
      * 初始化控件信息
-     * */
-    public void initView(){
-        tv_main_result = (TextView)findViewById(R.id.tv_main_result);
-        btn_main_skip = (Button)findViewById(R.id.btn_main_skip);
+     */
+    public void initView() {
+        tv_main_result = (TextView) findViewById(R.id.tv_main_result);
+        btn_main_skip = (Button) findViewById(R.id.btn_main_skip);
         btn_main_skip.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LryActivity.this,ReturnActivity.class);
+                Intent intent = new Intent(LryActivity.this, ReturnActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是LryActivity传过来的值！");
                 //跳转Activity
+
+                //这里采用startActivityForResult来做跳转，此处的requestCode为一个依据，可以写其他的值，但一定要>=0
                 startActivityForResult(intent, requestCode);
             }
         });
+
+
+        btn_web_page = (Button) findViewById(R.id.btn_web_page);
+        btn_web_page.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LryActivity.this, WebPageActivity.class);
+                startActivityForResult(intent, requestCodeForWebPage);
+            }
+        });
+
+
     }
 
 
@@ -44,8 +65,9 @@ public class LryActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        switch(resultCode){
-            case RESULT_OK:{//接收并显示Activity传过来的值
+
+        switch (resultCode) {
+            case RESULT_OK: {//接收并显示Activity传过来的值
                 Bundle bundle = data.getExtras();
                 String rs = bundle.getString("rs");
                 tv_main_result.setText(rs);
@@ -54,6 +76,7 @@ public class LryActivity extends Activity {
             default:
                 break;
         }
+
     }
 
     @Override

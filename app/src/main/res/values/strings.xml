@@ -6,4 +6,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_return">ReturnActivity</string>
     <string name="buttonText">buttonText</string>
+    <string name="buttonWebPage">跳到web页面</string>
+    <string name="title_activity_web_page">WebPageActivity</string>
+    <string name="title_web_page">WebPage page</string>
 </resources>

@@ -1,22 +1,64 @@
 学习过程
 
-1. 与mysql 数据库关联。
-2. 嵌入web页面。
-3. 不同页面切换 -Done
+1. 与mysql 数据库关联
+2. 嵌入web页面    -Done 2016.01.06
+3. 不同页面切换    -Done 2016.01.05
+4. webview与js交互
 
+学习入门
+http://hukai.me/android-training-course-in-chinese/security/security-gms-provider.html
 
+android permission权限与安全机制解析（上）
+http://blog.csdn.net/self_study/article/details/50074781
+
+android permission权限与安全机制解析（下）
+http://blog.csdn.net/self_study/article/details/50186435
+
+android客户端与服务器端交互 如何保持session
+http://blog.csdn.net/zxc123e/article/details/41698027
+
+Android平台通用安全问题分析及策略(1)
+http://mobile.51cto.com/aprogram-382057.htm
+
+---------------------------------------------------------
 2015.12.28
 初始化内容
 
-
+---------------------------------------------------------
 2016.01.05
 学习activity之间的传值，布局还要调整。
 
-http://blog.csdn.net/mojieke/article/details/8529364
 Android Activity之间跳转总结
+http://blog.csdn.net/mojieke/article/details/8529364
 
-android:layout_below="@id/textView"
 
 
+startActivityForResult( )
+可以一次性完成这项任务，当程序执行到这段代码的时候，假若从T1Activity跳转到下一个Text2Activity，
+而当这个Text2Activity调用了finish()方法以后，程序会自动跳转回T1Activity，并调用前一个T1Activity中的onActivityResult( )方法。
+http://www.cnblogs.com/lijunamneg/archive/2013/02/05/2892616.html
+
+
+页面布局总结：android:layout_below="@id/textView"
+
+---------------------------------------------------------
 2016.01.06
 学习 嵌入web页面
+
+android开发中WebView控件的实例与注意要点——个人主页浏览器简易实现
+http://itindex.net/detail/53169-android-%E5%BC%80%E5%8F%91-webview
+
+ERR_CACHE_MISS错误提示 解决如下：
+ 由于webview需要通过数据通信来访问网络，所以在manifest.xml配置文件中需要进行权限的设置（声明）
+ <uses-permission android:name="android.permission.INTERNET"/>
+
+
+---------------------------------------------------------
+2016.01.07
+webview与js交互
+http://www.cnblogs.com/vanezkw/archive/2012/07/02/2572799.html
+
+android webview之所以功能强大就是能够和js进行交互 把js写成的网页嵌套到app中。
+
+ //网页中包含JavaScript内容需调用以下方法，参数为true
+ webView.getSettings().setJavaScriptEnabled(true);
