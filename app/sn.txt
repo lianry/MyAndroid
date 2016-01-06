@@ -2,12 +2,21 @@
 
 1. 与mysql 数据库关联。
 2. 嵌入web页面。
-3. 不同页面切换
+3. 不同页面切换 -Done
 
 
 2015.12.28
 初始化内容
 
+
 2016.01.05
 学习activity之间的传值，布局还要调整。
 
+http://blog.csdn.net/mojieke/article/details/8529364
+Android Activity之间跳转总结
+
+android:layout_below="@id/textView"
+
+
+2016.01.06
+学习 嵌入web页面
