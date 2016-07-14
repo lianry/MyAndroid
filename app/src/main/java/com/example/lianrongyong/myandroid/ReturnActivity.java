@@ -8,6 +8,9 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 
+/**
+ * 页面与页面之间的跳转
+ */
 public class ReturnActivity extends Activity {
 
     //定义显示接收Activity传入值的TextView

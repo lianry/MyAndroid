@@ -12,6 +12,9 @@ import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.TextView;
 
+/**
+ * 页面读取html内容
+ */
 public class WebPageActivity extends Activity {
 
     //定义跳转的Button按钮
@@ -55,7 +58,9 @@ public class WebPageActivity extends Activity {
 
 
         webView = (WebView) findViewById(R.id.Toweb);
-        webView.loadUrl("http://www.baidu.com");
+        //webView.loadUrl("http://www.baidu.com");
+        //webView.loadUrl("file:///Users/lianrongyong/mygit/MyAndroid/app/webjs.html");
+        webView.loadUrl("file:///android_asset/webjs.html");
 
         //设置可自由缩放网页
         webView.getSettings().setSupportZoom(true);

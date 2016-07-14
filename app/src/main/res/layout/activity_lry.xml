@@ -37,7 +37,19 @@
         android:layout_below="@+id/btn_main_skip"
         android:text="@string/buttonWebPage"/>
 
+    <Button
+        android:id="@+id/btn_web_js"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_web_page"
+        android:text="@string/buttonWebJS"/>
 
+<Button
+        android:id="@+id/btn_login_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_web_js"
+        android:text="@string/buttonLoginStatus"/>
 
 
 </RelativeLayout>

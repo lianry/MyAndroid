@@ -7,6 +7,11 @@
     <string name="title_activity_return">ReturnActivity</string>
     <string name="buttonText">buttonText</string>
     <string name="buttonWebPage">跳到web页面</string>
+    <string name="buttonWebJS">跳到webJS页面</string>
+    <string name="buttonLoginStatus">跳到loginStatus页面</string>
     <string name="title_activity_web_page">WebPageActivity</string>
     <string name="title_web_page">WebPage page</string>
+    <string name="title_activity_web_js">WebJSActivity</string>
+    <string name="btn1_text">btn1_text</string>
+    <string name="title_activity_login_status">LoginStatusActivity</string>
 </resources>

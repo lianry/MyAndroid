@@ -9,6 +9,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+/**
+ * 首页
+ */
 public class LryActivity extends Activity {
 
     //定义显示接收Activity传入值的TextView
@@ -22,7 +25,17 @@ public class LryActivity extends Activity {
     //定义跳转的Button按钮
     private Button btn_web_page = null;
     //定义一个startActivityForResult（）方法用到的整型值
-    private final int requestCodeForWebPage = 1500;
+    private final int requestCodeForWebPage = 1501;
+
+    //定义跳转的Button按钮
+    private Button btn_web_js = null;
+    //定义一个startActivityForResult（）方法用到的整型值
+    private final int requestCodeForWebJS = 1502;
+
+    //定义跳转的Button按钮
+    private Button btn_login_status = null;
+    //定义一个startActivityForResult（）方法用到的整型值
+    private final int requestCodeForLoginStatus = 1503;
 
     /**
      * 初始化控件信息
@@ -52,6 +65,28 @@ public class LryActivity extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent(LryActivity.this, WebPageActivity.class);
                 startActivityForResult(intent, requestCodeForWebPage);
+            }
+        });
+
+        btn_web_js = (Button) findViewById(R.id.btn_web_js);
+        btn_web_js.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LryActivity.this, WebJSActivity.class);
+                startActivityForResult(intent, requestCodeForWebJS);
+            }
+        });
+
+
+
+        btn_login_status = (Button) findViewById(R.id.btn_login_status);
+        btn_login_status.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LryActivity.this, LoginStatusActivity.class);
+                startActivityForResult(intent, requestCodeForLoginStatus);
             }
         });
 

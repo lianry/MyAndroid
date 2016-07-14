@@ -3,7 +3,8 @@
 1. 与mysql 数据库关联
 2. 嵌入web页面    -Done 2016.01.06
 3. 不同页面切换    -Done 2016.01.05
-4. webview与js交互
+4. webview与js交互 -Done 2016.01.08
+5. 保持登录状态
 
 学习入门
 http://hukai.me/android-training-course-in-chinese/security/security-gms-provider.html
@@ -19,6 +20,14 @@ http://blog.csdn.net/zxc123e/article/details/41698027
 
 Android平台通用安全问题分析及策略(1)
 http://mobile.51cto.com/aprogram-382057.htm
+
+别人的学习内容
+android 第一个项目完成！ 阶段总结
+http://blog.csdn.net/double2hao/article/details/50470789
+
+
+Android WebView中的JavaScript代码使用
+http://www.cnblogs.com/mengdd/archive/2013/03/02/2940185.html
 
 ---------------------------------------------------------
 2015.12.28
@@ -62,3 +71,16 @@ android webview之所以功能强大就是能够和js进行交互 把js写成的
 
  //网页中包含JavaScript内容需调用以下方法，参数为true
  webView.getSettings().setJavaScriptEnabled(true);
+
+找不到本地文件，原因是要放在以下目录的。
+ Android Studio assets目录的位置在
+ XXX\src\main\assets
+
+---------------------------------------------------------
+2016.01.27 - Done
+学习保存用户登录状态，记录在文件中，token就可以，但不能防止别人复制到其他机器上用。 就你web也存在同样的问题。
+
+http://1.blogliuyu.sinaapp.com/?p=10
+android记录登录状态
+
+---------------------------------------------------------
